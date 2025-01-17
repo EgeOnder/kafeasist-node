@@ -7,10 +7,7 @@ node_modules
 
 # Local env files
 .env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env*.local
 
 # Testing
 coverage
@@ -26,7 +23,7 @@ coverage
 out/
 build
 dist
-
+.cache
 
 # Debug
 npm-debug.log*

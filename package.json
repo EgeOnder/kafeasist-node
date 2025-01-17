@@ -1,19 +1,39 @@
 {
   "name": "kafeasist",
   "private": true,
+  "engines": {
+    "node": ">=20.18.0",
+    "pnpm": "^9.14.2"
+  },
+  "packageManager": "pnpm@9.14.2",
+  "author": {
+    "name": "Ege Onder",
+    "email": "me@egeonder.dev",
+    "url": "https://egeonder.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kafeasist/kafeasist.git"
+  },
   "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
-    "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "build": "turbo run build",
+    "clean": "git clean -xdf node_modules && turbo run clean",
+    "dev": "turbo watch dev --continue",
+    "dev:www": "turbo watch dev -F @kafeasist/www...",
+    "format": "turbo run format --continue -- --cache-location .cache/.prettiercache",
+    "format:fix": "turbo run format --continue -- --write --cache --cache-location .cache/.prettiercache",
+    "lint": "turbo run lint --continue -- --cache --cache-location .cache/.eslintcache",
+    "lint:fix": "turbo run lint --continue -- --fix --cache --cache-location .cache/.eslintcache",
+    "lint:ws": "pnpm dlx sherif@latest",
+    "postinstall": "pnpm lint:ws",
+    "typecheck": "turbo run typecheck"
   },
   "devDependencies": {
-    "prettier": "^3.2.5",
+    "@kafeasist/prettier-config": "workspace:*",
+    "@types/node": "catalog:",
+    "prettier": "catalog:",
     "turbo": "^2.3.3",
-    "typescript": "5.5.4"
+    "typescript": "catalog:"
   },
-  "packageManager": "pnpm@9.0.0",
-  "engines": {
-    "node": ">=18"
-  }
+  "prettier": "@kafeasist/prettier-config"
 }
