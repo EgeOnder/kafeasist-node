@@ -1,0 +1,37 @@
+{
+  "name": "@kafeasist/auth-proxy",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "build": "pnpm with-env tsc",
+    "start": "pnpm with-env node dist/index.js",
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "with-env": "dotenv -e ../../.env --"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.8",
+    "better-auth": "catalog:auth",
+    "hono": "^4.6.20"
+  },
+  "devDependencies": {
+    "@kafeasist/db": "workspace:*",
+    "@kafeasist/eslint-config": "workspace:*",
+    "@kafeasist/prettier-config": "workspace:*",
+    "@kafeasist/tsconfig": "workspace:*",
+    "@types/node": "catalog:",
+    "dotenv-cli": "catalog:",
+    "eslint": "catalog:",
+    "prettier": "catalog:",
+    "typescript": "catalog:"
+  },
+  "prettier": "@kafeasist/prettier-config"
+}
