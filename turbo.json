@@ -32,6 +32,7 @@
     "VERCEL",
     "VERCEL_ENV",
     "VERCEL_URL",
+    "AUTH_PROXY_PORT",
     "npm_lifecycle_event"
   ]
 }

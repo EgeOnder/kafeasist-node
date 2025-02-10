@@ -48,8 +48,10 @@ export const auth = betterAuth({
      * Send a password reset email to the user.
      * @todo Implement this function.
      */
+    /* 
     sendResetPassword: async ({ user, url, token }, request) => {
       // TODO: Send the reset password email
     },
+    */
   },
 });
