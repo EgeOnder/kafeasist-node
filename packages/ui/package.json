@@ -1,0 +1,49 @@
+{
+  "name": "@kafeasist/ui",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "dev": "tsc",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
+  },
+  "dependencies": {
+    "@radix-ui/react-checkbox": "^1.1.4",
+    "@radix-ui/react-label": "^2.1.2",
+    "@radix-ui/react-separator": "^1.1.2",
+    "@radix-ui/react-slot": "^1.1.2",
+    "class-variance-authority": "^0.7.1",
+    "next-themes": "^0.4.4",
+    "react-hook-form": "catalog:",
+    "sonner": "catalog:",
+    "tailwind-merge": "^3.0.2"
+  },
+  "devDependencies": {
+    "@kafeasist/eslint-config": "workspace:*",
+    "@kafeasist/prettier-config": "workspace:*",
+    "@kafeasist/tailwind-config": "workspace:*",
+    "@kafeasist/tsconfig": "workspace:*",
+    "@types/react": "catalog:react",
+    "eslint": "catalog:",
+    "prettier": "catalog:",
+    "react": "catalog:react",
+    "typescript": "catalog:",
+    "zod": "catalog:"
+  },
+  "peerDependencies": {
+    "react": "catalog:react",
+    "zod": "catalog:"
+  },
+  "prettier": "@kafeasist/prettier-config"
+}

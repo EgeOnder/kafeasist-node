@@ -8,7 +8,7 @@ const config = {
   reactStrictMode: true,
 
   /** Enables hot reloading for local packages without a build step */
-  transpilePackages: ["@kafeasist/ui"],
+  transpilePackages: ["@kafeasist/auth", "@kafeasist/db", "@kafeasist/ui"],
 
   eslint: { ignoreDuringBuilds: true },
   typescript: { ignoreBuildErrors: true },

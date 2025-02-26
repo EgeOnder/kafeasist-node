@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+  --tracking-tight: -0.03em;
+}
+
+:root {
+  --background: hsl(27, 100%, 99%);
+  --foreground: hsl(0, 0%, 0%);
+  --border: hsl(0, 0%, 86%);
+  --link: hsl(220, 100%, 38%);
+  --muted-foreground: hsl(240, 2%, 54%);
+  --input-text: hsl(0, 0%, 19%);
+
+  --kf-red: hsl(0, 100%, 35%);
+  --kf-red-to: hsl(0, 100%, 25%);
+
+  --destructive: hsl(0, 100%, 60%);
+
+  --gradient-foreground: hsl(0, 0%, 100%);
+
+  --radius: 0.75rem;
+
+  --tracking-tight: -0.03em;
+}

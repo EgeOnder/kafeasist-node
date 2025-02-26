@@ -32,7 +32,7 @@
     "@kafeasist/prettier-config": "workspace:*",
     "@types/node": "catalog:",
     "prettier": "catalog:",
-    "turbo": "^2.3.3",
+    "turbo": "^2.4.1",
     "typescript": "catalog:"
   },
   "prettier": "@kafeasist/prettier-config"

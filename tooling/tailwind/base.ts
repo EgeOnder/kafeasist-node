@@ -6,42 +6,41 @@ export default {
   theme: {
     extend: {
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+        border: "var(--border)",
+        link: "var(--link)",
+        "input-text": "var(--input-text)",
+
+        "kf-red": "var(--kf-red)",
+        "kf-red-to": "var(--kf-red-to)",
+
+        "gradient-foreground": "var(--gradient-foreground)",
+
+        destructive: "var(--destructive)",
+
         muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
+          DEFAULT: "var(--muted)",
+          foreground: "var(--muted-foreground)",
         },
       },
-      borderColor: {
-        DEFAULT: "hsl(var(--border))",
+      borderColor: {},
+      fontFamily: {
+        sans: ["var(--font-sans)"],
+        serif: ["var(--font-serif)"],
+      },
+      fontSize: {
+        sm: "0.75rem",
+        md: "0.875rem",
+        lg: "1.125rem",
+        xl: "1.25rem",
+        "2xl": "1.75rem",
+        "3xl": "2.25rem",
+        "4xl": "3rem",
+      },
+
+      borderRadius: {
+        radius: "var(--radius)",
       },
     },
   },

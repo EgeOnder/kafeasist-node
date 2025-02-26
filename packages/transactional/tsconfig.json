@@ -1,0 +1,5 @@
+{
+  "extends": "@kafeasist/tsconfig/base.json",
+  "include": ["emails", "utils", "lib", "index.ts"],
+  "exclude": ["node_modules"]
+}

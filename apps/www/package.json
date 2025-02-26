@@ -14,14 +14,22 @@
     "with-env": "dotenv -e ../../.env --"
   },
   "dependencies": {
+    "@hookform/resolvers": "^4.1.2",
+    "@kafeasist/auth": "workspace:*",
+    "@kafeasist/db": "workspace:*",
+    "@kafeasist/ui": "workspace:*",
     "@t3-oss/env-nextjs": "^0.12.0",
     "@tanstack/react-query": "catalog:",
     "@trpc/client": "catalog:",
-    "@trpc/react-query": "catalog:",
     "@trpc/server": "catalog:",
+    "@trpc/tanstack-react-query": "catalog:",
+    "better-auth": "catalog:auth",
+    "lucide-react": "^0.475.0",
     "next": "catalog:next",
     "react": "catalog:react",
     "react-dom": "catalog:react",
+    "react-hook-form": "catalog:",
+    "sonner": "catalog:",
     "zod": "catalog:"
   },
   "devDependencies": {

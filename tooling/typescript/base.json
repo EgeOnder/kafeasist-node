@@ -17,7 +17,9 @@
     "strict": true,
     "noUncheckedIndexedAccess": true,
     "checkJs": true,
-
+    
+    "jsx": "react-jsx",
+    
     "module": "Preserve",
     "moduleResolution": "Bundler",
     "noEmit": true

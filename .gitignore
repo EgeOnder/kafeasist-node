@@ -33,3 +33,7 @@ yarn-error.log*
 # Misc
 .DS_Store
 *.pem
+
+# Expo
+.expo
+expo-env.d.ts
