@@ -2,8 +2,7 @@
   "name": "kafeasist",
   "private": true,
   "engines": {
-    "node": ">=20.18.0",
-    "pnpm": "^10.2.1"
+    "node": ">=20.18.0"
   },
   "packageManager": "pnpm@10.2.1",
   "author": {
