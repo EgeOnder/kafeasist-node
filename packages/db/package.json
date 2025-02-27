@@ -38,7 +38,7 @@
     "@kafeasist/prettier-config": "workspace:*",
     "@kafeasist/tsconfig": "workspace:*",
     "dotenv-cli": "catalog:",
-    "drizzle-kit": "^0.30.2",
+    "drizzle-kit": "^0.30.5",
     "eslint": "catalog:",
     "prettier": "catalog:",
     "typescript": "catalog:"
