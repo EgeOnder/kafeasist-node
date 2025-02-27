@@ -23,21 +23,19 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
   const isSent = type === "sent";
 
   return (
-    <main className="m-auto flex h-screen w-4/5 items-center justify-center">
-      <div className="flex flex-1 flex-col items-center justify-center space-y-4">
-        <AuthHeading
-          title="Hesabına giriş yap"
-          description="E-posta adresinizi girin, ya şifresiz giriş yapın, ya da şifrenizle giriş yapın."
-        />
-        {isUsingEmailPassword ? (
-          <EmailPasswordForm />
-        ) : isSent ? (
-          <LinkSent />
-        ) : (
-          <MagicLinkForm />
-        )}
-      </div>
-    </main>
+    <>
+      <AuthHeading
+        title="Hesabına giriş yap"
+        description="E-posta adresinizi girin, ya şifresiz giriş yapın, ya da şifrenizle giriş yapın."
+      />
+      {isUsingEmailPassword ? (
+        <EmailPasswordForm />
+      ) : isSent ? (
+        <LinkSent />
+      ) : (
+        <MagicLinkForm />
+      )}
+    </>
   );
 }
 
