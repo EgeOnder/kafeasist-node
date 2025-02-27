@@ -3,7 +3,7 @@ import React from "react";
 import AuthHeading from "../_components/auth-heading";
 import { RegisterForm } from "./_components/forms";
 
-export default async function RegisterPage() {
+export default function RegisterPage() {
   return (
     <>
       <AuthHeading

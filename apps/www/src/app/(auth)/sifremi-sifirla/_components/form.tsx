@@ -25,13 +25,12 @@ import {
 import { authClient } from "~/lib/auth-client";
 
 export default function ResetPasswordForm() {
+  const [loading, setLoading] = React.useState(false);
+
   const searchParams = useSearchParams();
   const router = useRouter();
 
   const token = searchParams.get("token");
-  if (!token) return <NotFound />;
-
-  const [loading, setLoading] = React.useState(false);
 
   const formSchema = z
     .object({
@@ -72,7 +71,7 @@ export default function ResetPasswordForm() {
 
     const { error } = await authClient.resetPassword({
       newPassword: password,
-      token: token!,
+      token: token ?? "",
     });
 
     setLoading(false);
@@ -84,6 +83,8 @@ export default function ResetPasswordForm() {
 
     router.push("/sifremi-sifirla/basarili");
   }
+
+  if (!token) return <NotFound />;
 
   return (
     <Form {...form}>

@@ -7,7 +7,7 @@ import { Button, Typography } from "@kafeasist/ui";
 
 import AuthHeading from "../_components/auth-heading";
 
-export default async function EmailVerificationSuccessPage() {
+export default function EmailVerificationSuccessPage() {
   return (
     <>
       <AuthHeading title="Hesabınız doğrulandı" />

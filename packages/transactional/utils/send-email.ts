@@ -1,6 +1,6 @@
 import type { JSX } from "react";
 
-import { FromEmail } from "..";
+import type { FromEmail } from "..";
 import { resend } from "../lib/resend";
 
 interface SendEmailOptions {

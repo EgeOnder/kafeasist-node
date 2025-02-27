@@ -66,7 +66,7 @@ export const auth = betterAuth({
      * Send a password reset email to the user.
      * @see https://www.better-auth.com/docs/authentication/email-password#forget-password
      */
-    sendResetPassword: async ({ user, url, token }, request) => {
+    sendResetPassword: async ({ user, url }) => {
       await sendEmail({
         from: "destek",
         to: user.email,
@@ -77,7 +77,7 @@ export const auth = betterAuth({
   },
 
   emailVerification: {
-    sendVerificationEmail: async ({ user, url, token }, request) => {
+    sendVerificationEmail: async ({ user, url }) => {
       await sendEmail({
         from: "no-reply",
         to: user.email,
@@ -90,7 +90,7 @@ export const auth = betterAuth({
   plugins: [
     magicLink({
       disableSignUp: true,
-      sendMagicLink: async ({ email, url, token }, request) => {
+      sendMagicLink: async ({ email, url }) => {
         await sendEmail({
           from: "no-reply",
           to: email,

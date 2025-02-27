@@ -2,14 +2,9 @@
 
 import React from "react";
 import Link from "next/link";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { zodResolver } from "@hookform/resolvers/zod";
-import {
-  ArrowLeftIcon,
-  ArrowRightIcon,
-  Divide,
-  WandSparklesIcon,
-} from "lucide-react";
+import { ArrowLeftIcon, ArrowRightIcon } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 import { z } from "zod";
@@ -78,8 +73,6 @@ function StepOne({
   setStep,
 }: FormProps) {
   const [loading, setLoading] = React.useState(false);
-
-  const router = useRouter();
 
   const formSchema = z.object({
     firstName: z.string().nonempty("Lütfen adınızı girin."),

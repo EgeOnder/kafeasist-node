@@ -7,7 +7,7 @@ import { Button, Typography } from "@kafeasist/ui";
 
 import AuthHeading from "../../_components/auth-heading";
 
-export default async function ResetPasswordSuccessPage() {
+export default function ResetPasswordSuccessPage() {
   return (
     <>
       <AuthHeading title="Şifreniz sıfırlandı" />

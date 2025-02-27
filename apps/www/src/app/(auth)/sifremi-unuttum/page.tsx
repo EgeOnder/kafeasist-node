@@ -3,7 +3,7 @@ import React from "react";
 import AuthHeading from "../_components/auth-heading";
 import ForgotPasswordForm from "./_components/form";
 
-export default async function ForgotPasswordPage() {
+export default function ForgotPasswordPage() {
   return (
     <>
       <AuthHeading

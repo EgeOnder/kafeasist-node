@@ -12,7 +12,7 @@
       "persistent": false
     },
     "format": {
-      "outputs": [".cache/.prettiercache"],
+      "outputs": [".cache/.prettiercache", ".turbo/**"],
       "outputLogs": "new-only"
     },
     "lint": {
@@ -34,6 +34,8 @@
     "VERCEL_URL",
     "BETTER_AUTH_SECRET",
     "RESEND_API_KEY",
+    "NEXT_PUBLIC_AUTH_PROXY_URL",
+    "NEXT_PUBLIC_SESSION_COOKIE_PREFIX",
     "npm_lifecycle_event"
   ]
 }

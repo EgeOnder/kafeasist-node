@@ -46,9 +46,15 @@ const notFoundMessages = [
   },
 ];
 
-export default async function NotFound() {
+export default function NotFound() {
+  const fallbackMessage = {
+    title: "404: Sayfa bulunamadı.",
+    description: "Ama belki başka bir sayfada bulabilirsiniz.",
+  };
+
   const { title, description } =
-    notFoundMessages[Math.floor(Math.random() * notFoundMessages.length)]!;
+    notFoundMessages[Math.floor(Math.random() * notFoundMessages.length)] ??
+    fallbackMessage;
 
   return (
     <main className="m-auto flex h-screen w-4/5 items-center justify-center">
